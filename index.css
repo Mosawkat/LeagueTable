@@ -18,20 +18,22 @@ body
 {
     font-size: 400%;
 }
+/* Table Headers at the top */
 .tableTagClub, .tableTagMP, .tableTagW, .tableTagD, .tableTagL, .tableTagGF, .tableTagGA, .tableTagGD, .tableTagPts
 {
     font-size: 200%;
     text-align: left;
 }
+/* The table positions whole */
 .tablePos
 {
     font-size: 150%;
 }
 
+/*Containers for the buttons */
 .buttonsContainer
 {
     display: grid;
     grid-template-columns: auto auto;
     text-align: center;
 }
-
