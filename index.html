@@ -26,10 +26,17 @@
 <!--Title, Subtitle and Start Button-->
 <div class="header" id="header">
     <h1 class="headerTitle" id="headerTitle"> Soccer League Simulator</h1>
-    <button class="button-77" role="button" id="genButton">Generate Table</button>
+</div>
+<div class="buttonsContainer">
+    <div class="generate">
+    <button onclick="buttonClicked()" class="button-77" role="button" id="genButton">Generate Table</button>
+    </div>
+    <div class="skip">
+    <button onclick="buttonClicked()" class="button-77" role="button" id="genButton2">End Of Season</button>
+    </div>
 </div>
 <!--The League Table-->
-<div class="leageTable">
+<div class="leagueTable" id="leagueTable">
 
     <table style="width:100%;border:1px solid black;">
         <!--The Table Tags (Top of Table)-->
@@ -45,7 +52,7 @@
           <th class="tableTagPts">Pts</th>
         </tr>
         <!--Position 1-->
-        <tr class="tablePos1" id="tablePos1">
+        <tr class="tablePos" id="tablePos1">
           <td class="posOneClub" id="posOneClub"></td>
           <td class="posOneMP" id="posOneMP">MP</td>
           <td class="posOneW" id="posOneW">W</td>
@@ -57,7 +64,7 @@
           <td class="posOnePts" id="posOnePts">Pts</td>
         </tr>
         <!--Position 2-->
-        <tr class="tablePos2" id="tablePos2">
+        <tr class="tablePos" id="tablePos2">
             <td class="posTwoClub" id="posTwoClub">Club 1</td>
             <td class="posTwoMP" id="posTwoMP">MP</td>
             <td class="posTwoW" id="posTwoW">W</td>
@@ -69,7 +76,7 @@
             <td class="posTwoPts" id="posTwoPts">Pts</td>
         </tr>
         <!--Position 3-->
-        <tr class="tablePos3" id="tablePos3">
+        <tr class="tablePos" id="tablePos3">
             <td class="posThreeClub" id="posThreeClub">Club 1</td>
             <td class="posThreeMP" id="posThreeMP">MP</td>
             <td class="posThreeW" id="posThreeW">W</td>
@@ -81,7 +88,7 @@
             <td class="posThreePts" id="posThreePts">Pts</td>
         </tr>
         <!--Position 4-->
-        <tr class="tablePos4" id="tablePos4">
+        <tr class="tablePos" id="tablePos4">
             <td class="posFourClub" id="posFourClub">Club 1</td>
             <td class="posFourMP" id="posFourMP">MP</td>
             <td class="posFourW" id="posFourW">W</td>
@@ -93,7 +100,7 @@
             <td class="posFourPts" id="posFourPts">Pts</td>
         </tr>
         <!--Position 5-->
-        <tr class="tablePos5" id="tablePos5">
+        <tr class="tablePos" id="tablePos5">
             <td class="posFiveClub" id="posFiveClub">Club 1</td>
             <td class="posFiveMP" id="posFiveMP">MP</td>
             <td class="posFiveW" id="posFiveW">W</td>
@@ -105,7 +112,7 @@
             <td class="posFivePts" id="posFivePts">Pts</td>
         </tr>
         <!--Position 6-->
-        <tr class="tablePos6" id="tablePos6">
+        <tr class="tablePos" id="tablePos6">
             <td class="posSixClub" id="posSixClub">Club 1</td>
             <td class="posSixMP" id="posSixMP">MP</td>
             <td class="posSixW" id="posSixW">W</td>
@@ -117,7 +124,7 @@
             <td class="posSixPts" id="posSixPts">Pts</td>
         </tr>
         <!--Position 7-->
-        <tr class="tablePos7" id="tablePos7">
+        <tr class="tablePos" id="tablePos7">
             <td class="posSevenClub" id="posSevenClub">Club 1</td>
             <td class="posSevenMP" id="posSevenMP">MP</td>
             <td class="posSevenW" id="posSevenW">W</td>
@@ -129,7 +136,7 @@
             <td class="posSevenPts" id="posSevenPts">Pts</td>
         </tr>
         <!--Position 8-->
-        <tr class="tablePos8" id="tablePos8">
+        <tr class="tablePos" id="tablePos8">
             <td class="posEightClub" id="posEightClub">Club 1</td>
             <td class="posEightMP" id="posEightMP">MP</td>
             <td class="posEightW" id="posEightW">W</td>
@@ -141,7 +148,7 @@
             <td class="posEightPts" id="posEightPts">Pts</td>
         </tr>
         <!--Position 9-->
-        <tr class="tablePos2" id="tablePos2">
+        <tr class="tablePos" id="tablePos2">
             <td class="posNineClub" id="posNineClub">Club 1</td>
             <td class="posNineMP" id="posNineMP">MP</td>
             <td class="posNineW" id="posNineW">W</td>
@@ -153,9 +160,9 @@
             <td class="posNinePts" id="posNinePts">Pts</td>
         </tr>
         <!--Position 10-->
-        <tr class="tablePos2" id="tablePos2">
+        <tr class="tablePos" id="tablePos2">
             <td class="posTenClub" id="posTenClub">Club 1</td>
-            <td class="posTenMP" id="posTeneMP">MP</td>
+            <td class="posTenMP" id="posTenMP">MP</td>
             <td class="posTenW" id="posTenW">W</td>
             <td class="posTenD" id="posTenD">D</td>
             <td class="posTenL" id="posTenL">L</td>
@@ -165,7 +172,7 @@
             <td class="posTenPts" id="posTenPts">Pts</td>
         </tr>
         <!--Position 11-->
-        <tr class="tablePos11" id="tablePos11">
+        <tr class="tablePos" id="tablePos11">
             <td class="posElevenClub" id="posElevenClub">Club 1</td>
             <td class="posElevenMP" id="posElevenMP">MP</td>
             <td class="posElevenW" id="posElevenW">W</td>
@@ -177,7 +184,7 @@
             <td class="posElevenPts" id="posElevenPts">Pts</td>
         </tr>
         <!--Position 12-->
-        <tr class="tablePos12" id="tablePos12">
+        <tr class="tablePos" id="tablePos12">
             <td class="posTwelveClub" id="posTwelveClub">Club 1</td>
             <td class="posTwelveMP" id="posTwelveMP">MP</td>
             <td class="posTwelveW" id="posTwelveW">W</td>
@@ -189,7 +196,7 @@
             <td class="posTwelvePts" id="posTwelvePts">Pts</td>
         </tr>
         <!--Position 13-->
-        <tr class="tablePos13" id="tablePos13">
+        <tr class="tablePos" id="tablePos13">
             <td class="posThirteenClub" id="posThirteenClub">Club 1</td>
             <td class="posThirteenMP" id="posThirteenMP">MP</td>
             <td class="posThirteenW" id="posThirteenW">W</td>
@@ -201,7 +208,7 @@
             <td class="posThirteenPts" id="posThirteenPts">Pts</td>
         </tr>
         <!--Position 14-->
-        <tr class="tablePos14" id="tablePos14">
+        <tr class="tablePos" id="tablePos14">
             <td class="posFourteenClub" id="posFourteenClub">Club 1</td>
             <td class="posFourteenMP" id="posFourteenMP">MP</td>
             <td class="posFourteenW" id="posFourteenW">W</td>
@@ -213,7 +220,7 @@
             <td class="posFourteenPts" id="posFourteenPts">Pts</td>
         </tr>
         <!--Position 15-->
-        <tr class="tablePos15" id="tablePos15">
+        <tr class="tablePos" id="tablePos15">
             <td class="posFifteenClub" id="posFifteenClub">Club 1</td>
             <td class="posFifteenMP" id="posFifteenMP">MP</td>
             <td class="posFifteenW" id="posFifteenW">W</td>
@@ -225,7 +232,7 @@
             <td class="posFifteenPts" id="posFifteenPts">Pts</td>
         </tr>
         <!--Position 16-->
-        <tr class="tablePos16" id="tablePos16">
+        <tr class="tablePos" id="tablePos16">
             <td class="posSixteenClub" id="posSixteenClub">Club 1</td>
             <td class="posSixteenMP" id="posSixteenMP">MP</td>
             <td class="posSixteenW" id="posSixteenW">W</td>
@@ -237,7 +244,7 @@
             <td class="posSixteenPts" id="posSixteenPts">Pts</td>
         </tr>
         <!--Position 17-->
-        <tr class="tablePos17" id="tablePos17">
+        <tr class="tablePos" id="tablePos17">
             <td class="posSeventeenClub" id="posSeventeenClub">Club 1</td>
             <td class="posSeventeenMP" id="posSeventeenMP">MP</td>
             <td class="posSeventeenW" id="posSeventeenW">W</td>
@@ -249,7 +256,7 @@
             <td class="posSeventeenPts" id="posSeventeenPts">Pts</td>
         </tr>
         <!--Position 18-->
-        <tr class="tablePos18" id="tablePos18">
+        <tr class="tablePos" id="tablePos18">
             <td class="posEighteenClub" id="posEighteenClub">Club 1</td>
             <td class="posEighteenMP" id="posEighteenMP">MP</td>
             <td class="posEighteenW" id="posEighteenW">W</td>
@@ -261,7 +268,7 @@
             <td class="posEighteenPts" id="posEighteenPts">Pts</td>
         </tr>
         <!--Position 19-->
-        <tr class="tablePos19" id="tablePos19">
+        <tr class="tablePos" id="tablePos19">
             <td class="posNineteenClub" id="posNineteenClub">Club 1</td>
             <td class="posNineteenMP" id="posNineteenMP">MP</td>
             <td class="posNineteenW" id="posNineteenW">W</td>
@@ -273,7 +280,7 @@
             <td class="posNineteenPts" id="posNineteenPts">Pts</td>
         </tr>
         <!--Position 20-->
-        <tr class="tablePos20" id="tablePos20">
+        <tr class="tablePos" id="tablePos20">
             <td class="posTwentyClub" id="posTwentyClub">Club 1</td>
             <td class="posTwentyMP" id="posTwentyMP">MP</td>
             <td class="posTwentyW" id="posTwentyW">W</td>

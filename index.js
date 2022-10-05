@@ -4,16 +4,15 @@ function toggleLD()
     element.classList.toggle("dark-mode");
 }
 
+var buttonClickedAmount = 0;
+var table = document.getElementById("leagueTable");
+
 function initialize()
 {
-    var allTeams = ["Almeria", "Athletic Bilbao","Atletico Madrid","Barcelona","Cadiz","Celta Vigo","Elche","Espanyol","Getafe","Girona","Mallorca","Osasuna","Rayo Vallecano","Real Betis","Real Madrid","Real Sociedad","Sevilla","Valencia","Valladolid","Villarreal"];
-    console.log(allTeams);
+    var table = document.getElementById("leagueTable");
+    table.style.display = "none";
 
-    testLoop();
-}
 
-function testLoop()
-{
     var allTeams = ["Almeria", "Athletic Bilbao","Atletico Madrid","Barcelona","Cadiz","Celta Vigo","Elche","Espanyol","Getafe","Girona","Mallorca","Osasuna","Rayo Vallecano","Real Betis","Real Madrid","Real Sociedad","Sevilla","Valencia","Valladolid","Villarreal"];
     var clubIDs = ["posOneClub","posTwoClub","posThreeClub","posFourClub","posFiveClub","posSixClub","posSevenClub","posEightClub","posNineClub","posTenClub","posElevenClub","posTwelveClub","posThirteenClub","posFourteenClub","posFifteenClub","posSixteenClub","posSeventeenClub","posEighteenClub","posNineteenClub","posTwentyClub"];
     var mpIDs = ["posOneMP","posTwoMP","posThreeMP","posFourMP","posFiveMP","posSixMP","posSevenMP","posEightMP","posNineMP","posTenMP","posElevenMP","posTwelveMP","posThirteenMP","posFourteenMP","posFifteenMP","posSixteenMP","posSeventeenMP","posEighteenMP","posNineteenMP","posTwentyMP"];
@@ -60,4 +59,34 @@ function testLoop()
         console.log("x is "+x);
         console.log(allTeams.length);
     }
+}
+
+function buttonClicked()
+{
+    console.log(buttonClickedAmount);
+    if (buttonClickedAmount==0)
+    {
+        var table = document.getElementById("leagueTable");
+        table.style.display = "block";
+        var but = document.getElementById("genButton");
+        but.innerHTML = "Start";
+
+        matchmaker();
+    }
+    if (buttonClickedAmount==1)
+    {
+        var but = document.getElementById("genButton");
+        but.innerHTML = "Next MatchDay";
+    }
+    buttonClickedAmount +=1;
+}
+
+function matchmaker()
+{
+    
+}
+
+function createMatchDay(teamA, teabB)
+{
+    
 }
