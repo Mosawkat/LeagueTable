@@ -7,6 +7,8 @@ function toggleLD()
 var buttonClickedAmount = 0;
 var table = document.getElementById("leagueTable");
 
+
+// Initialize will load every time the webpage is refreshed
 function initialize()
 {
     var table = document.getElementById("leagueTable");
@@ -61,6 +63,8 @@ function initialize()
     }
 }
 
+//Button clicked function will determine what the button
+//does every time it's clicked
 function buttonClicked()
 {
     console.log(buttonClickedAmount);
@@ -81,6 +85,7 @@ function buttonClicked()
     buttonClickedAmount +=1;
 }
 
+//Will create matches 
 function matchmaker()
 {
     
