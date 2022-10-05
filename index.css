@@ -1,0 +1,21 @@
+body
+{
+    background-color: white;
+}
+/* Dark Mode Settings */
+.dark-mode 
+{
+    background-color: black;
+    color: white;
+}
+
+.header
+{
+    text-align: center;
+    padding: 2%;
+}
+.headerTitle
+{
+    font-size: 400%;
+}
+
