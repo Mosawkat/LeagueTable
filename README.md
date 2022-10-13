@@ -15,3 +15,5 @@ Please refer to LGProject file which includes:
 -Potential web applications utilized
 -Notes
 -Concerns
+
+That file also includes pictures, code snippets, notes and etc.
