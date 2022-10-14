@@ -117,6 +117,7 @@ function initialize()
     }
 }
 
+//Generate Table / Start Season button which changes and essentially is the controlling button for the website
 function buttonClicked()
 {
     //console.log("BUTTON CLICKED AMOUNT:");
@@ -144,6 +145,7 @@ function buttonClicked()
     matchdaynum++;
 }
 
+//This function will create the matches dynamically after the button has been clicked
 function matchmaker()
 {   
     var allTeamsDup = ["Almeria", "Athletic Bilbao","Atletico Madrid","Barcelona","Cadiz","Celta Vigo","Elche","Espanyol","Getafe","Girona","Mallorca","Osasuna","Rayo Vallecano","Real Betis","Real Madrid","Real Sociedad","Sevilla","Valencia","Valladolid","Villarreal"];
