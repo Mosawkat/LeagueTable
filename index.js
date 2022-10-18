@@ -117,7 +117,6 @@ function initialize()
     }
 }
 
-//Generate Table / Start Season button which changes and essentially is the controlling button for the website
 function buttonClicked()
 {
     //console.log("BUTTON CLICKED AMOUNT:");
@@ -145,7 +144,6 @@ function buttonClicked()
     matchdaynum++;
 }
 
-//This function will create the matches dynamically after the button has been clicked
 function matchmaker()
 {   
     var allTeamsDup = ["Almeria", "Athletic Bilbao","Atletico Madrid","Barcelona","Cadiz","Celta Vigo","Elche","Espanyol","Getafe","Girona","Mallorca","Osasuna","Rayo Vallecano","Real Betis","Real Madrid","Real Sociedad","Sevilla","Valencia","Valladolid","Villarreal"];
@@ -595,29 +593,11 @@ function createMatch(teamA, teamB, matchday)
     document.getElementById(GDIDs[teamBPos]).innerHTML = allTeamsGD[teamBPos];
 }
 
-var pos1;
-var pos2;
-var pos3;
-var pos4;
-var pos5;
-var pos6;
-var pos7;
-var pos8;
-var pos9;
-var pos10;
-var pos11;
-var pos12;
-var pos13;
-var pos14;
-var pos15;
-var pos16;
-var pos17;
-var pos18;
-var pos19;
-var pos20;
-
 function restructureTable()
 {
+    const topPositions = [];
+
+    const biggestValues = [];
     biggestValue = Math.max(...allTeamsPts);
 
     for (i = 0; i < allTeamsPts.length; i++) 
@@ -625,17 +605,26 @@ function restructureTable()
         allTeamsPtsCopy[i] = allTeamsPts[i];
     }
 
-    for (var z = 0; z <= allTeamsPtsCopy.length; z++)
+
+    for (var a = 0; a <= allTeamsPtsCopy.length; a++)
     {
-        if (allTeamsPtsCopy[z] == biggestValue)
+        biggestValue = Math.max(...allTeamsPtsCopy);
+        if (biggestValue == allTeamsPtsCopy[a])
         {
-            
-            //console.log("Same Value");
-            //console.log(allTeamsPtsCopy[z]);
+            topPositions.push(a);
+            console.log("TOP POSITIONS:");
+            console.log(topPositions);
+
+
+
+            //allTeamsPtsCopy[a] = -1;
+            console.log("ARRAY");
+            console.log(allTeamsPtsCopy);
+
+
         }
     }
-    //console.log("Biggest Value:");
-	//console.log(biggestValue);  
+
 }
 
 function checkGD(teamOne, teamTwo)
