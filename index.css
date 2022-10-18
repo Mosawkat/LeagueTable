@@ -21,6 +21,8 @@ body
 {
     font-size: 400%;
 }
+
+//The table headers
 .tableTagClub, .tableTagMP, .tableTagW, .tableTagD, .tableTagL, .tableTagGF, .tableTagGA, .tableTagGD, .tableTagPts
 {
     font-size: 200%;
@@ -31,16 +33,21 @@ body
     font-size: 150%;
 }
 
+//Button container
 .buttonsContainer
 {
     display: grid;
     grid-template-columns: auto auto;
     text-align: center;
 }
+
+//Generate Button
 .generate
 {
     text-align: right;
 }
+
+//Skip Button
 .skip
 {
     text-align: left;
