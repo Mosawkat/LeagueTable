@@ -17,3 +17,5 @@ Please refer to LGProject file which includes:
 -Concerns
 
 That file also includes pictures, code snippets, notes and etc.
+
+You won't be able to open the file here as it is a pages file so please download it and convert it. 
